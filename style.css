@@ -1,0 +1,72 @@
+header{
+    background: darkgrey;
+    grid-area: header;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-pudding);
+    color: black;
+}
+
+:root{
+    --main-radius: 5px;
+    --main-pudding: 5px;
+}
+
+.conteiner{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+        "header header header header"
+        "sidebar main main main"
+        "sidebar content1 content2 content3"
+        "sidebar footer footer footer";
+        grid-gap: 0.2rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: darkgrey;
+        text-align: center;
+}
+
+main{
+    background: slategrey;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-pudding);
+}
+
+.sidebar{
+    background: slategray;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-pudding);
+}
+
+.conteiner1{
+    background: slategrey;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-pudding);
+}
+
+.conteiner2{
+    background: slategrey;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-pudding);
+}
+
+.conteiner3{
+    background: slategrey;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-pudding);
+}
+
+footer{
+    background: slategrey;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-pudding);
+}
